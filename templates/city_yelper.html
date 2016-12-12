@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="jumbotron">
+			<div2 class="container">
+			{% if city %}
+				<h1>
+					Hello, here are good {{doing}} places from {{city}}!  
+					The top 3 restaurants in {{city}} are {{businesses}}.
+				</h1>
+				<a href="{{ url_for('city_weather') }}">Look up another address</a>
+			{% else %}
+				<h1>
+					Hello, friend! Are you board or hungry, where are you from?
+					So I can tell you where to eat or a place to go!
+				</h1>
+					<form action="/">
+						Chose what to do(Type 'Food' if you're looking for restaurants):<br>
+						<input type= "text" name = "doing" >
+						<br>
+						City and State:<br>
+						<input type= "text" name= "city">
+						<input type= "submit" value = "Submit">
+					</form> 				
+
+
+			{% endif%}
+				
+			
+			
+			</div2>
+		</div>
+	</body>
+</html>
