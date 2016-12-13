@@ -1,1 +1,1 @@
-web: python yelp_recommends_food.py
+web: python yelp_recommends_food
