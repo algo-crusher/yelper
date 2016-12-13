@@ -53,18 +53,14 @@ def get_food_place(place,term):
 			break
 	return phone_book
 
-	
-#app.route("/about")
-
-#def about():
 #	return render_template('about.html')
 
 # name(orange) is the assignment inside 
 # the templates, name(white), is the variable 
-# already assigned
+
 
 
 
 if __name__ == "__main__":
 	port = int(os.environ.get("PORT",5000))
-	app.run(host="1.1.1.1", port=port)
+	app.run(host="0.0.0.0", port=port)
